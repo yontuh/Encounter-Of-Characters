@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://b2l56iyyo7tj"]
+
+[ext_resource type="Texture2D" uid="uid://b8h6clg7thsvx" path="res://Heros/Bogart/Bogart.png" id="1_qybek"]
+[ext_resource type="Script" path="res://Heros/Bogart/Body.gd" id="1_vcgv0"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_5ty6e"]
+radius = 5.0
+
+[node name="Bogart" type="CharacterBody2D"]
+script = ExtResource("1_vcgv0")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+texture = ExtResource("1_qybek")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_5ty6e")

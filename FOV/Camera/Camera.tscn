@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://bkwtv7wdyidua"]
+
+[ext_resource type="Script" path="res://FOV/Camera/Camera.gd" id="1_frroq"]
+[ext_resource type="Script" path="res://FOV/Camera/Camera2D.gd" id="2_vi8ys"]
+[ext_resource type="PackedScene" uid="uid://1ag8vmpxodrt" path="res://UI/ui_test.tscn" id="3_5w5t4"]
+
+[node name="Camera" type="CharacterBody2D"]
+script = ExtResource("1_frroq")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(5, 5)
+script = ExtResource("2_vi8ys")
+
+[node name="UI_test" parent="." instance=ExtResource("3_5w5t4")]
+offset_left = -244.0
+offset_top = -102.0
+offset_right = -244.0
+offset_bottom = -102.0

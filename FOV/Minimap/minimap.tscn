@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://dinmimfus702d"]
+
+[ext_resource type="Script" path="res://FOV/Minimap/Minimap.gd" id="1_uy7pk"]
+[ext_resource type="PackedScene" uid="uid://bothwvkfeafwv" path="res://Arena/Arena.tscn" id="2_ay1la"]
+
+[node name="Minimap" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_uy7pk")
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
+
+[node name="Arena" parent="SubViewportContainer/SubViewport" instance=ExtResource("2_ay1la")]
+scale = Vector2(2.75, 2.75)
