@@ -9,8 +9,8 @@
 
 [node name="Test_Scene" parent="." instance=ExtResource("1_imcvn")]
 
-[node name="Camera" parent="." instance=ExtResource("1_j7uhl")]
-
 [node name="Bogart" parent="." instance=ExtResource("2_bluyi")]
 
 [node name="Bogart2" parent="." instance=ExtResource("4_h7urk")]
+
+[node name="Camera" parent="." instance=ExtResource("1_j7uhl")]

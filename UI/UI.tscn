@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://rm876yigec35"]
+
+[ext_resource type="Texture2D" uid="uid://b6iqipd2pqi5g" path="res://Art/NinjaAdventure/HUD/Heart.png" id="1_gei2y"]
+
+[node name="UI" type="CanvasLayer"]
+
+[node name="Heart" type="Sprite2D" parent="."]
+position = Vector2(621, 225.5)
+scale = Vector2(4.3, 9.3125)
+texture = ExtResource("1_gei2y")
