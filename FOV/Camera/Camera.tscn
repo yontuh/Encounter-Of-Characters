@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://FOV/Camera/Camera.gd" id="1_frroq"]
 [ext_resource type="Script" path="res://FOV/Camera/Camera2D.gd" id="2_vi8ys"]
-[ext_resource type="PackedScene" uid="uid://1ag8vmpxodrt" path="res://UI/ui_test.tscn" id="3_5w5t4"]
+[ext_resource type="PackedScene" uid="uid://rm876yigec35" path="res://UI/UI.tscn" id="3_jbw7c"]
 
 [node name="Camera" type="CharacterBody2D"]
 script = ExtResource("1_frroq")
@@ -11,8 +11,4 @@ script = ExtResource("1_frroq")
 zoom = Vector2(5, 5)
 script = ExtResource("2_vi8ys")
 
-[node name="UI_test" parent="." instance=ExtResource("3_5w5t4")]
-offset_left = -244.0
-offset_top = -102.0
-offset_right = -244.0
-offset_bottom = -102.0
+[node name="UI" parent="." instance=ExtResource("3_jbw7c")]
