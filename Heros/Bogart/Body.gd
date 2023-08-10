@@ -19,7 +19,6 @@ func _physics_process(delta):
 	print(health)
 
 
-
 func update_health():
 	var healthbar = $healthbar
 	healthbar.value = health
@@ -32,7 +31,7 @@ func update_health():
 	
 func _on_regen_timer_timeout():
 	if health < 100:
-		health = health + 20
+		health += 5
 		if health > 100:
 			health = 100
 	if health <= 0:

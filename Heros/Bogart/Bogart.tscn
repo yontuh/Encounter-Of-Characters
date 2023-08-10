@@ -13,20 +13,18 @@ script = ExtResource("1_vcgv0")
 texture_filter = 1
 texture = ExtResource("1_qybek")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_5ty6e")
 
 [node name="healthbar" type="ProgressBar" parent="."]
 modulate = Color(0, 0.8, 0, 1)
 offset_left = -6.0
-offset_top = -8.0
+offset_top = -10.0
 offset_right = 114.0
-offset_bottom = 19.0
+offset_bottom = 37.0
 scale = Vector2(0.1, 0.1)
-show_percentage = false
 
 [node name="regen_timer" type="Timer" parent="."]
-wait_time = 5.0
 autostart = true
 
 [connection signal="timeout" from="regen_timer" to="." method="_on_regen_timer_timeout"]
