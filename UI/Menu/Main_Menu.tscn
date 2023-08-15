@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=3 uid="uid://dxw8f4tjepfw7"]
+
+[ext_resource type="Script" path="res://UI/Menu/Main_Menu.gd" id="1_5cww4"]
+
+[node name="Main_Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_5cww4")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Play" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Play"
+
+[node name="Exit" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Exit"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Exit" to="." method="_on_exit_pressed"]

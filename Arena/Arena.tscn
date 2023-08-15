@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://b03c1wp02spj4" path="res://Arena/test_scene.tscn" id="1_imcvn"]
 [ext_resource type="PackedScene" uid="uid://bkwtv7wdyidua" path="res://FOV/Camera/Camera.tscn" id="1_j7uhl"]
 [ext_resource type="PackedScene" uid="uid://b2l56iyyo7tj" path="res://Heros/Bogart/Bogart.tscn" id="2_bluyi"]
-[ext_resource type="PackedScene" uid="uid://brsdhqurqjeu2" path="res://Heros/Bogart/Bogart2.tscn" id="4_h7urk"]
+[ext_resource type="PackedScene" uid="uid://dilakf80dgwti" path="res://Heros/Bogart2/Bogart2.tscn" id="4_pbywm"]
 
 [node name="Arena" type="Node2D"]
 
@@ -11,6 +11,6 @@
 
 [node name="Bogart" parent="." instance=ExtResource("2_bluyi")]
 
-[node name="Bogart2" parent="." instance=ExtResource("4_h7urk")]
-
 [node name="Camera" parent="." instance=ExtResource("1_j7uhl")]
+
+[node name="Bogart2" parent="." instance=ExtResource("4_pbywm")]
