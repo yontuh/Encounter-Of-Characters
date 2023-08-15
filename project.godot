@@ -1,19 +1,12 @@
-; Engine configuration file.
-; It's best edited using the editor UI and not directly,
-; since the parameters that go here are not all obvious.
-;
-; Format:
-;   [section] ; section goes between []
-;   param=value ; assign values to parameters
-
 config_version=5
 
 [application]
 
 config/name="Naeveh"
-run/main_scene="res://Arena/Arena.tscn"
+run/main_scene="res://UI/Menu/Main_Menu.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://icon.svg"
+config/tags=PackedStringArray("multiplayer")
 
 [input]
 
